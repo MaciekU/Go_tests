@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/maciek13U/Simple01/circleutil"
 	"fmt"
+
+	"github.com/maciek13U/Go_tests/Simple01/circleutil"
 )
 
 func add(a, b int) int {
