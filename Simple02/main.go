@@ -14,6 +14,15 @@ func LetterInStringCount(testedString string, letter string) int {
 	return lettersInString
 }
 
+// SumList adds elements from list of floats
+func SumList(listSum []float64) float64 {
+	var sum float64 = 0
+	for _, elem := range listSum {
+		sum += elem
+	}
+	return sum
+}
+
 func main() {
 	var testString = "Aaaabbce1232234"
 	var letter = "a"
@@ -45,4 +54,8 @@ func main() {
 	if key, search := fileExtensions["Golang"]; search {
 		fmt.Println(key)
 	}
+
+	testList := []float64{0, 2, 4, 0.1}
+	fmt.Println(testList, " add=", SumList(testList))
+
 }
