@@ -1,9 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
+	"fmt"
 	"os"
+
 	"github.com/maciek13U/Go_tests/Simple01/circleutil"
 )
 
@@ -13,11 +14,15 @@ func add(a, b int) int {
 
 func endProgram() {
 	for {
-	fmt.Println("Press q to exit")
-	reader := bufio.NewReader(os.Stdin)
-	char, _, err := reader.ReadRune()
-	if err != nil { fmt.Println(err) }
-	if char == 'q' { os.Exit(0) }
+		fmt.Println("Press q to exit")
+		reader := bufio.NewReader(os.Stdin)
+		char, _, err := reader.ReadRune()
+		if err != nil {
+			fmt.Println(err)
+		}
+		if char == 'q' {
+			os.Exit(0)
+		}
 	}
 }
 
@@ -37,5 +42,5 @@ func main() {
 	fmt.Println("Area of circle:", r.Area())
 
 	endProgram()
-	
+
 }
