@@ -16,7 +16,7 @@ func LetterInStringCount(testedString string, letter string) int {
 
 // SumList adds elements from list of floats
 func SumList(listSum []float64) float64 {
-	var sum float64 = 0
+	var sum float64
 	for _, elem := range listSum {
 		sum += elem
 	}
