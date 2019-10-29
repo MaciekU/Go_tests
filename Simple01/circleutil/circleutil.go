@@ -24,3 +24,7 @@ func NewCir(x, y int, r float64) Circle {
 func (cir *Circle) ChangeRadius(newRadius float64) {
 	cir.r = newRadius
 }
+
+func (cir Circle) GetRadius() float64 {
+	return cir.r
+}
